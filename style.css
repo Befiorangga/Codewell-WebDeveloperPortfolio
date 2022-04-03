@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap'); /* Prata Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap'); /* Inter Font */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+  font-family: 'Inter', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Prata', serif;
+}
+
+p {
+  margin: 0;
+  background: none;
+}
+
+h1 {
+  margin: 0;
+  background: none;
+  font-family: 'Prata', serif;
+  font-weight: lighter;
+}
+
+ul, li {
+  text-decoration: none;
+  padding: 0px;
+  margin: 0px;
+  background: none;
+}
+
+body {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.container {
+  padding: 4rem 6rem;
+  background: none;
+}
+
+
+/*=============== HEADER ===============*/
+nav {
+  padding: 2rem 6rem;
+}
+
+.name {
+  font-size: 22px;
+}
+
+.navlinks {
+  list-style: none;
+  margin: 0;
+  font-size: 20px;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.navlinks li {
+  display: inline-block;
+  padding: 0 1rem;
+  font-weight: 300;
+  color: #d0d0d0;
+}
+
+.btn1 {
+  background-color: yellow;
+  width: 12rem;
+  height: 4rem;
+  display: inline-block;
+}
+
+.btn1 p {
+  background: none;
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 500;
+  padding-top: 20px;
+}
+
+.hamburger {
+  display: none;
+  background-color: transparent;
+  border: none;
+}
+
+
+
+/*=============== MAIN 1 ===============*/
+.main1 {
+  display: grid;
+  gap: 1rem;
+  width: auto;
+}
+
+.main1 h1 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 60px;
+  width: 60%;
+}
+
+.main1 p {
+  font-weight: 300;
+  font-size: 20px;
+  opacity: 0.7;
+  line-height: 1.4;
+  width: 55%;
+}
+
+
+/*=============== Main 2 (Logo) ===============*/
+.logo {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-self: flex-end;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.logologo {
+  width: 10rem;
+  line-height: 5;
+}
+
+
+/*=============== Main 3 (Links Website) =============*/
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 3rem;
+  background: none;
+}
+
+.card img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-content h1 {
+  margin: 1.5rem 0;
+  font-size: 40px;
+  font-weight: lighter;
+}
+
+.card-content p {
+  margin: 0;
+  font-size: 20px;
+  opacity: 0.5;
+  line-height: 1.5;
+}
+
+/*=============== Main 4 (Article) =============*/
+.article {
+  background-color: #282830;
+}
+
+.text1 {
+  padding: 0rem 0;
+  background: none;
+  line-height: 1.4;
+}
+
+.text2 {
+  background: none;
+  padding: 0rem 0;
+  line-height: 1.4;
+}
+
+.text1 h1 {
+  font-size: 40px;
+  font-weight: lighter;
+  margin-bottom: 1.5rem;
+}
+
+.text1 p {
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+  opacity: 0.5;
+}
+
+.text2 p {
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+  opacity: 0.5;
+}
+
+
+/* =============== Main 5 (Contact) ==============*/
+.contact {
+  display: grid;
+  gap: 1rem;
+  background: none;
+}
+
+.contact h1 {
+  font-size: 40px;
+}
+
+.contacttext {
+  width: auto;
+  font-size: 20px;
+  opacity: 0.5;
+  line-height: 1.4;
+  text-align: justify;
+}
+
+/* Main 6 */
+footer {
+  background-color: #282830;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: none;
+}
+
+.socialicon {
+  border-radius: 100%;
+}
+
+
+@media screen and (min-width: 100px) and (max-width: 1040px){
+
+  nav {
+    padding: 2rem 4rem;
+  }
+
+  .container {
+    padding: 2rem 4rem;
+  }
+
+  .menu {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu.show {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+    align-items: center;
+  }
+
+  .name {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+    text-align: center;
+  }
+
+  .logo {
+    justify-content: center;
+  }
+
+  .foricon {
+    display: block;
+    text-align: right;
+
+  }
+
+  .main1 h1 {
+    margin: 0;
+    font-weight: 500;
+    font-size: 45px;
+    width: 100%;
+  }
+  
+  .main1 p {
+    font-weight: 300;
+    font-size: 20px;
+    opacity: 0.7;
+    line-height: 1.4;
+    width: 100%;
+  }
+
+  .card-content h1 {
+    margin: 1.5rem 0;
+    font-size: 30px;
+    font-weight: lighter;
+  }
+
+  .card-content p {
+    margin: 0;
+    font-size: 16px;
+    opacity: 0.5;
+    line-height: 1.5;
+  }
+  
+}

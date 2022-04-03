@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav>
+      <ul class="navlinks" id="navlinks">
+        <h1 class="name">Johnatan Spectre</h1>
+        <button class="hamburger" id="hamburger">
+          <img src="Assets/Hamburger Menu.svg" alt="">
+        </button>
+        <span class="menu" id="menu">
+        <li>Article</li>
+        <li>Chats</li>
+        <li>Awards</li>
+        <li>About</li>
+        </span>
+        <div class="btn1 menu" id="btn1">
+          <p>Get in Touch</>
+        </div> 
+      </ul>
+    </nav> 
+  </header>
+
+  <!-- Main 1 -->
+  <section>
+    <div class="container">
+      <div class="main1">
+        <h1>Helping companies build better, scalable software.</h1>
+        <p>Award-winning web developer and author, with over 15+ years of working experience with Fortune 500 companies like Apple, Google, Facebook, and more.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main 2 (Logo) -->
+  <section>
+    <div class="container">
+      <div class="logo">
+        <div class="logologo"><img src="Assets/Logos/Walmart.svg" alt=""></div>
+        <div class="logologo"><img src="Assets/Logos/JP Morgan.svg" alt=""></div>
+        <div class="logologo"><img src="Assets/Logos/Visa.svg" alt=""></div>
+        <div class="logologo"><img src="Assets/Logos/Tinder.svg" alt=""></div>
+        <div class="logologo"><img src="Assets/Logos/Samsung.svg" alt=""></div>
+        <div class="logologo"><img src="Assets/Logos/Verizon.svg" alt=""></div> 
+      </div>
+    </div>
+  </section>
+
+  <!-- Main 3 (Link Website) -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="card">
+          <img src="Assets/Spense.png" alt="">
+          <div class="card-content">
+            <h1><a href="#">Spense.com</a></h1>
+            <p>Rethinking the way writers get paid, an open-source platform designed to help writers focus more on writing, and less on when and how they'll get paid. Project in collaboration with Codewell.cc</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="Assets/YelpCamp.png" alt="">
+          <div class="card-content">
+            <h1><a href="#">YelpCamp.com</a></h1>
+            <p>Allowing backpack travelers to perfectly plan their trip through an open-source platform similiar to TripAdvisor. With over 1m MAU, YelpCamp has been the crowd's favorite in 2021.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main 4 (Article) -->
+  <section>
+    <div class="article">
+      <div class="container">
+        <div class="row">
+          <div class="text1">
+            <h1>A co-founder at one of the world's largest communities.</h1>
+            <p>The combined experience i have working at the top Fortune 500 companies has allowed me to developer a skillset that helps me in not just development, but in every aspect of any business.</p>
+            <p>I'm proud to announce that I am now working at one of the world's largest communities teaching young minds about how to sell yourself as a developer and open them to a whole new world of opportunities.</p>
+          </div>
+          <div class="text2">
+            <p>As a developer, you have everything available to you and all thats holding you back is yourself.</p>
+            <p>A quote I live by perfectly illustrates what i mean.</p>
+            <p>"How big would you dream, if you knew you wouldn't fail" You've already gone through the hardest parts being a developer, it's time to elevate your skills and become a leader in something you're passionate about.</p>
+            <p>I'm happy to chat over coffe some time about how i can help your company.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main 5 (Contact)-->
+  <section>
+    <div class="container">
+      <div class="contact">
+        <h1>Interested in working with me?</h1>
+        <p class="contacttext">I'm active on all social media platforms listed below, but you can also me an email and i will get back to you within 24-48 hours.</p>
+      <div class="btn1">
+        <p>Get in touch</p>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Main 6 (Footer) -->
+  <footer>
+    <div class="container">
+        <div class="footer">
+        <h1 class="name">Johnatan Spectre</h1>
+        <ul class="navlinks foricon">
+            <li><img class="socialicon" src="Assets/Social Icons/Twitter.svg" alt=""></li>
+            <li><img class="socialicon" src="Assets/Social Icons/LinkedIn.svg" alt=""></li>
+            <li><img class="socialicon" src="Assets/Social Icons/Github.svg" alt=""></li>
+        </ul>
+      </div>
+      </div>
+  </footer>
+  
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('menu');
+    const button = document.getElementById('btn1');
+
+      hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+      button.classList.toggle('show');
+    }); 
+  </script>
+</body>
+</html>
