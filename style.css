@@ -304,4 +304,13 @@ footer {
     line-height: 1.5;
   }
   
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
 }
